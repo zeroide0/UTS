@@ -44,7 +44,7 @@ CREATE TABLE `artikel` (
 
 LOCK TABLES `artikel` WRITE;
 /*!40000 ALTER TABLE `artikel` DISABLE KEYS */;
-INSERT INTO `artikel` VALUES (3,6,2,'pembangunan di indonesia','adadasd','artikel_69ef9228195416.17242305.webp','Senin, 27 April 2026 | 23:43'),(4,6,2,'asdasd','asdasdad','artikel_69ef94e1cc4035.43467118.webp','Senin, 27 April 2026 | 23:54');
+INSERT INTO `artikel` VALUES (3,6,2,'pembangunan di indonesia','adadasd','artikel_69ef9fd5304f50.69543811.jpeg','Senin, 27 April 2026 | 23:43');
 /*!40000 ALTER TABLE `artikel` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -66,11 +66,11 @@ CREATE TABLE `kategori_artikel` (
 
 --
 -- Dumping data for table `kategori_artikel`
-
+--
 
 LOCK TABLES `kategori_artikel` WRITE;
 /*!40000 ALTER TABLE `kategori_artikel` DISABLE KEYS */;
-INSERT INTO `kategori_artikel` VALUES (2,'Politik','Indonesia');
+INSERT INTO `kategori_artikel` VALUES (2,'Pembangunan','Indonesia');
 /*!40000 ALTER TABLE `kategori_artikel` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -99,7 +99,7 @@ CREATE TABLE `penulis` (
 
 LOCK TABLES `penulis` WRITE;
 /*!40000 ALTER TABLE `penulis` DISABLE KEYS */;
-INSERT INTO `penulis` VALUES (6,'adasdasd','dodo','jokowi7','$2y$10$VbRlWYxbDUzJ2YNb92rwQOmsdOkjtj9tta5BvALcsj/9EnrY1ER76','foto_69ef8c118c13a4.77999761.webp'),(7,'ghufrom','m','ghufron','$2y$10$6a2JbP9KcGxv2Q/LHyBS1eSg8JXmCZywAv9wumtT/YxwILbng9zTG','foto_69ef8d755aa542.89332479.webp');
+INSERT INTO `penulis` VALUES (6,'jokowi','dodo','jokowi7','$2y$10$VbRlWYxbDUzJ2YNb92rwQOmsdOkjtj9tta5BvALcsj/9EnrY1ER76','foto_69ef8c118c13a4.77999761.webp');
 /*!40000 ALTER TABLE `penulis` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -112,4 +112,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-28  0:20:27
+-- Dump completed on 2026-04-28  0:42:37
