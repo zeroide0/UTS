@@ -35,7 +35,7 @@ CREATE TABLE `artikel` (
   KEY `fk_artikel_kategori` (`id_kategori`),
   CONSTRAINT `fk_artikel_kategori` FOREIGN KEY (`id_kategori`) REFERENCES `kategori_artikel` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE,
   CONSTRAINT `fk_artikel_penulis` FOREIGN KEY (`id_penulis`) REFERENCES `penulis` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -61,7 +61,7 @@ CREATE TABLE `kategori_artikel` (
   `keterangan` text COLLATE utf8mb4_unicode_ci,
   PRIMARY KEY (`id`),
   UNIQUE KEY `uq_nama_kategori` (`nama_kategori`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -70,7 +70,7 @@ CREATE TABLE `kategori_artikel` (
 
 LOCK TABLES `kategori_artikel` WRITE;
 /*!40000 ALTER TABLE `kategori_artikel` DISABLE KEYS */;
-INSERT INTO `kategori_artikel` VALUES (2,'Pembangunan','Indonesia');
+INSERT INTO `kategori_artikel` VALUES (2,'Pembangunan','Indonesia'),(3,'Teknologi','teknologi it');
 /*!40000 ALTER TABLE `kategori_artikel` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -90,7 +90,7 @@ CREATE TABLE `penulis` (
   `foto` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `uq_user_name` (`user_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -99,7 +99,7 @@ CREATE TABLE `penulis` (
 
 LOCK TABLES `penulis` WRITE;
 /*!40000 ALTER TABLE `penulis` DISABLE KEYS */;
-INSERT INTO `penulis` VALUES (6,'jokowi','dodo','jokowi7','$2y$10$VbRlWYxbDUzJ2YNb92rwQOmsdOkjtj9tta5BvALcsj/9EnrY1ER76','foto_69ef8c118c13a4.77999761.webp');
+INSERT INTO `penulis` VALUES (6,'presiden','jokowi','jokowi7','$2y$10$VbRlWYxbDUzJ2YNb92rwQOmsdOkjtj9tta5BvALcsj/9EnrY1ER76','foto_69ef8c118c13a4.77999761.webp'),(8,'user1','name1','username1','$2y$10$4OdBGJPkHIZ.fzSifT1HAO1uBBr0TfoFO1IEz59KAtT8YbSP5oSim','foto_69f049108c1137.99274437.jpeg');
 /*!40000 ALTER TABLE `penulis` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -112,4 +112,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-28  0:42:37
+-- Dump completed on 2026-04-28 17:03:44
